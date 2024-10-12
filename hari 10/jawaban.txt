@@ -1,0 +1,32 @@
+1.    create Database myshop
+
+2.	INSERT INTO users (NAME, email)
+	VALUES ('John Doe', 'john@doe.com') 2x
+
+3. 	INSERT INTO categories (NAME)
+	VALUES ('Gadget')       5x    (saya insert manual satu satu)
+
+4.	INSERT INTO categories (NAME)
+	VALUES ('Gadget')       5x       (saya insert manual satu satu)
+
+5.	INSERT INTO items (NAME, description)
+	VALUES ('Sumsang B50')       3x       (saya insert manual satu satu)
+
+6.    SELECT NAME, email
+      FROM users 
+
+7.    SELECT * FROM items
+      WHERE price > 1000000
+
+8.    SELECT * FROM items
+      WHERE name LIKE '%uniklo%';
+
+9.    SELECT * FROM items
+      LEFT JOIN categories ON categories.id = items.category_id 
+
+10.   UPDATE items 
+      SET price = 2500000
+      WHERE id = 1	 
+
+
+ 	
